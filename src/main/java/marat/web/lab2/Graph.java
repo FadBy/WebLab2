@@ -9,7 +9,6 @@ public class Graph {
     private final Figure[] quarters;
 
     public Graph(Figure[] quarters) {
-        System.out.println("created");
         if (quarters.length != 4) {
             throw new IllegalArgumentException("quarters must have exact 4 elements");
         }

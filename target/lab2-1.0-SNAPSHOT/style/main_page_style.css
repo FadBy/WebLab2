@@ -1,5 +1,7 @@
 body {
     margin: inherit;
+    background-color: #1B1C22;
+    color: #D4D0B9
 }
 
 header {
@@ -10,16 +12,17 @@ header {
 main {
     display: flex;
     justify-content: space-between;
+
 }
 
 .block_section {
-    background-color: bisque;
-    border: 2px solid gray;
+    background-color: #252938;
+    border: 2px solid #252938;
     padding: 5px;
     margin: 20px;
     display: block;
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px gray;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #030719;
 }
 
 .form {
@@ -59,23 +62,23 @@ tr {
 }
 
 td {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #241404;
+    border-right: 1px solid #241404;
 }
 
 tr:nth-child(odd) {
-    background-color: #ddd8;
+    background-color: #1B1C22;
 }
 
 th {
-    background-color: darkgray;
-    border: 1px solid black;
+    background-color: #1B1C22;
+    border: 1px solid #241404;
     border-collapse: collapse;
     border-spacing: 0px;
 }
 
 tbody {
-    border: 2px solid black;
+    border: 2px solid #241404;
 }
 
 .error {

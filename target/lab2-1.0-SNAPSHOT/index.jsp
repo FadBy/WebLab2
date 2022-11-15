@@ -2,6 +2,14 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%
+    if (!request.getParameterMap().isEmpty()) {
+        response.sendError(response.SC_NOT_ACCEPTABLE, "Parameters are not allowed");
+    }
+    if (request.getReader().lines().findAny().isPresent()) {
+        response.sendError(response.SC_NOT_ACCEPTABLE, "BodyContent is not allowed");
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,19 +33,16 @@
         <div class="block_section form">
             <form id="form">
                 <div id="x_input">
-                    <label for="x" class="label_form">X</label>
-                    <select name="x" id="x">
-                        <option value="">---Выберите---</option>
-                        <option value="-4">-4</option>
-                        <option value="-3">-3</option>
-                        <option value="-2">-2</option>
-                        <option value="-1">-1</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <label class="label_form">X</label>
+                    <input type="radio" name="x" value="-2">-2
+                    <input type="radio" name="x" value="-1.5">-1.5
+                    <input type="radio" name="x" value="-1">-1
+                    <input type="radio" name="x" value="-0.5">-0.5
+                    <input type="radio" name="x" value="0">0<br>
+                    <input type="radio" name="x" value="0.5">0.5
+                    <input type="radio" name="x" value="1">1
+                    <input type="radio" name="x" value="1.5">1.5
+                    <input type="radio" name="x" value="2">2
                 </div>
                 <div id="y_input">
                     <label for="y" class="label_form">Y</label>
@@ -71,12 +76,12 @@
             </thead>
             <tbody id="tableBody">
             <%
-                if (application.getAttribute("table") == null) {
-                    application.setAttribute("table", new ArrayList<ResultRay>());
+                if (session.getAttribute("table") == null) {
+                    session.setAttribute("table", new ArrayList<ResultRay>());
                 }
             %>
             <%
-                for (ResultRay row : (List<ResultRay>) application.getAttribute("table"))
+                for (ResultRay row : (List<ResultRay>) session.getAttribute("table"))
                 {
             %>
                     <tr>

@@ -1,4 +1,4 @@
-
+import {addRay, removeError, showError} from "./form.js";
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -8,20 +8,22 @@ const unitCanvas = canvas.width / 100;
 const rLength = unitCanvas * 33;
 const axisLength = unitCanvas * 90;
 const arrowTipLength = unitCanvas * 5;
-const arrowAngle = Math.PI / 12;  // in radian
+const arrowAngle = Math.PI / 12;
 const markLength = unitCanvas * 2;
 const textDist = unitCanvas * 2;
 const vertTextPos = 1;
 const horTextPos = -1;
 const textOffset = canvas.style.fontSize.length * 0.5;
-
+const radiusInactiveBorder = 5;
+const dotRadius = 3;
 const oX = canvas.height / 2; 
 const oY = canvas.width / 2;
 
-ctx.fillStyle = "blue";
+ctx.fillStyle = "#BCBA30";
 //drawing rectangle
-ctx.fillRect(oX, oY, rLength, rLength / 2);
+ctx.fillRect(oX - rLength, oY, rLength, rLength / 2);
 //drawing triangle
+ctx.lineWidth = 0;
 ctx.beginPath();
 ctx.moveTo(oX, oY);
 ctx.lineTo(oX, oY - rLength / 2);
@@ -30,12 +32,13 @@ ctx.lineTo(oX, oY);
 ctx.fill();
 
 //drawing circle
-ctx.moveTo(oX - rLength / 2, oY);
+ctx.moveTo(oX + rLength / 2, oY);
 ctx.lineTo(oX, oY);
 ctx.lineTo(oX, oY + rLength / 2);
-ctx.arc(oX, oY, rLength / 2, Math.PI / 2, Math.PI);
+ctx.arc(oX, oY, rLength / 2, 0, Math.PI / 2);
 ctx.fill();
 
+ctx.strokeStyle = "#D4D0B9"
 ctx.beginPath();
 //drawing vertical arrow
 ctx.moveTo(oX, oY + axisLength / 2);
@@ -95,24 +98,14 @@ ctx.strokeText("x", oX + axisLength / 2 - textOffset, oY + horTextPos * (markLen
 ctx.stroke();
 $(document).ready(function() {
     $("#canvas").click(function (event) {
-        console.log("yes-yes-yes")
         const x = event.pageX - $(this).position().left - 27;
         const y = event.pageY - $(this).position().top - 27;
-        if (x < 5 * unitCanvas || x > 95 * unitCanvas || y < 5 * unitCanvas || y > 95 * unitCanvas) {
+        if (x < radiusInactiveBorder * unitCanvas || x > (100 - radiusInactiveBorder) * unitCanvas || y < radiusInactiveBorder * unitCanvas || y > (100 - radiusInactiveBorder) * unitCanvas) {
             return;
         }
-        const cur_error = document.getElementById("error");
-
-        if (cur_error != null) {
-
-            cur_error.parentNode.removeChild(cur_error);
-        }
+        removeError();
         if (!document.forms[0]["r"].value) {
-            const error_message = document.createElement("div");
-            error_message.className = "error";
-            error_message.id = "error";
-            error_message.innerHTML = "Invalid R value";
-            document.getElementById("r_input").appendChild(error_message);
+            showError($("#r_input"), "R value is not defined");
         } else {
             $.ajax({
                 type: "GET",
@@ -121,7 +114,10 @@ $(document).ready(function() {
 
                 dataType: "json",
                 timeout: 2000,
-                success: addRay,
+                success: function (data) {
+                    addRay(data);
+                    drawCircle(event.pageX - 27, event.pageY - rLength - 1, data["hitResult"]);
+                },
                 error: function(obj, textStatus, errorThrown) {
                     console.log(errorThrown);
                     console.log(obj);
@@ -129,5 +125,17 @@ $(document).ready(function() {
             });
         }
     });
-})
+});
+
+function drawCircle(x, y, hit) {
+    ctx.beginPath();
+    if (hit) {
+        ctx.fillStyle = "#3F2900";
+    } else {
+        ctx.fillStyle = "#BCBA30";
+    }
+    ctx.arc(x, y, dotRadius, 0, 2 * Math.PI, false);
+    ctx.fill();
+}
+
 

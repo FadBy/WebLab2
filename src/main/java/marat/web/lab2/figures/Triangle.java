@@ -22,7 +22,7 @@ public class Triangle extends Figure {
         double xEdge = xEdgeC * r;
         double yEdge = yEdgeC * r;
         if (!(xEdge < 0 && x <= 0 || xEdge > 0 && x >= 0) || !(yEdge < 0 && y <= 0 || yEdge > 0 && y >= 0)
-            || Math.abs(y) >= -Math.abs(x) * Math.asin(Math.abs(yEdge) / Math.abs(xEdge)) + Math.abs(yEdge)) {
+            || y > 0.5 * x + 2.5/*((Math.abs(y) > -Math.abs(xEdge) * Math.abs(yEdge) / (-Math.abs(xEdge)) + Math.abs(yEdge) * Math.abs(x)))*/) {
             return false;
         }
         return true;

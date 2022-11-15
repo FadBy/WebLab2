@@ -2,6 +2,14 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%
+    if (!request.getParameterMap().isEmpty()) {
+        response.sendError(response.SC_NOT_ACCEPTABLE, "Parameters are not allowed");
+    }
+    if (request.getReader().lines().findAny().isPresent()) {
+        response.sendError(response.SC_NOT_ACCEPTABLE, "BodyContent is not allowed");
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +18,9 @@
     <link rel="icon" href="style/main_page_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/main_page_style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="scripts/canvas.js"></script>
+    <script src="scripts/form.js"></script>
+    <script type="module" src="scripts/get_all_table.js"></script>
 </head>
 <body>
 <header class="block_section">
@@ -19,25 +30,20 @@
 <main>
     <div>
         <canvas class="block_section" id="canvas" width="350" height="350">
-            <script src="scripts/canvas.js">
-            </script>
         </canvas>
         <div class="block_section form">
             <form id="form">
                 <div id="x_input">
-                    <label for="x" class="label_form">X</label>
-                    <select name="x" id="x">
-                        <option value="">---Выберите---</option>
-                        <option value="-4">-4</option>
-                        <option value="-3">-3</option>
-                        <option value="-2">-2</option>
-                        <option value="-1">-1</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <label class="label_form">X</label>
+                    <input type="radio" name="x" value="-2">-2
+                    <input type="radio" name="x" value="-1.5">-1.5
+                    <input type="radio" name="x" value="-1">-1
+                    <input type="radio" name="x" value="-0.5">-0.5
+                    <input type="radio" name="x" value="0">0<br>
+                    <input type="radio" name="x" value="0.5">0.5
+                    <input type="radio" name="x" value="1">1
+                    <input type="radio" name="x" value="1.5">1.5
+                    <input type="radio" name="x" value="2">2
                 </div>
                 <div id="y_input">
                     <label for="y" class="label_form">Y</label>
@@ -54,10 +60,10 @@
                 <button type="reset">reset</button>
                 <button type="submit">submit</button>
             </form>
-            <script src="scripts/form.js"></script>
+
         </div>
     </div>
-    <div class="block_section hundred_width">
+    <div class="block_section hundred_width table_block">
         <table class="hundred_width">
             <thead>
             <tr>
@@ -70,25 +76,7 @@
             </tr>
             </thead>
             <tbody id="tableBody">
-            <%
-                if (application.getAttribute("table") == null) {
-                    application.setAttribute("table", new ArrayList<ResultRay>());
-                }
-            %>
-            <%
-                for (ResultRay row : (List<ResultRay>) application.getAttribute("table"))
-                {
-            %>
-                    <tr>
-            <%
-                    for (String col : row.convertToList()) {
-                        %><td><%=col%>></td><%
-                    }
-            %>
-                    </tr>
-            <%
-                }
-            %>
+
             </tbody>
         </table>
     </div>

@@ -1,6 +1,6 @@
 
-
 const canvas = document.getElementById("canvas");
+// const canvas = $("#canvas");
 const ctx = canvas.getContext("2d");
 
 const unitCanvas = canvas.width / 100;
@@ -8,7 +8,7 @@ const unitCanvas = canvas.width / 100;
 const rLength = unitCanvas * 33;
 const axisLength = unitCanvas * 90;
 const arrowTipLength = unitCanvas * 5;
-const arrowAngle = Math.PI / 12;  // in radian
+const arrowAngle = Math.PI / 12;
 const markLength = unitCanvas * 2;
 const textDist = unitCanvas * 2;
 const vertTextPos = 1;
@@ -20,8 +20,9 @@ const oY = canvas.width / 2;
 
 ctx.fillStyle = "blue";
 //drawing rectangle
-ctx.fillRect(oX, oY, rLength, rLength / 2);
+ctx.fillRect(oX - rLength, oY, rLength, rLength / 2);
 //drawing triangle
+ctx.lineWidth = 0;
 ctx.beginPath();
 ctx.moveTo(oX, oY);
 ctx.lineTo(oX, oY - rLength / 2);
@@ -30,10 +31,10 @@ ctx.lineTo(oX, oY);
 ctx.fill();
 
 //drawing circle
-ctx.moveTo(oX - rLength / 2, oY);
+ctx.moveTo(oX + rLength / 2, oY);
 ctx.lineTo(oX, oY);
 ctx.lineTo(oX, oY + rLength / 2);
-ctx.arc(oX, oY, rLength / 2, Math.PI / 2, Math.PI);
+ctx.arc(oX, oY, rLength / 2, 0, Math.PI / 2);
 ctx.fill();
 
 ctx.beginPath();

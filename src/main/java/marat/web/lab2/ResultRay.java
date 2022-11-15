@@ -31,14 +31,12 @@ public class ResultRay {
         json.addProperty("y", y);
         json.addProperty("r", r);
         json.addProperty("hitResult", hitResult);
-        System.out.println(currentTime.format(DateTimeFormatter.ISO_LOCAL_TIME));
-        json.addProperty("currentTime", currentTime.format(DateTimeFormatter.ISO_LOCAL_TIME));
+        json.addProperty("currentTime", currentTime.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
         json.addProperty("executionTime", executionTime);
-        System.out.println(json.toString());
         return json;
     }
 
     public List<String> convertToList() {
-        return new ArrayList<String>() {{add(String.valueOf(x)); add(String.valueOf(y)); add(String.valueOf(r)); add(String.valueOf(hitResult)); add(currentTime.toString()); add(String.valueOf(executionTime));}};
+        return new ArrayList<String>() {{add(String.valueOf(x)); add(String.valueOf(y)); add(String.valueOf(r)); add(String.valueOf(hitResult)); add(currentTime.format(DateTimeFormatter.ofPattern("HH:mm:ss"))); add(String.valueOf(executionTime));}};
     }
 }
