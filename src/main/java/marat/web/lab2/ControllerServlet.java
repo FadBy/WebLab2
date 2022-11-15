@@ -14,28 +14,6 @@ import java.util.logging.Logger;
 public class ControllerServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(ControllerServlet.class.getName());
 
-    public ControllerServlet() {
-        logger.info("constructor");
-    }
-
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        logger.info("init");
-    }
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
-        logger.info("service");
-    }
-
-    @Override
-    public void destroy() {
-        super.destroy();
-        logger.info("destroy");
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         logger.info("doGet");

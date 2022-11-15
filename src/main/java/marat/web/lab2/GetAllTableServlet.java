@@ -16,28 +16,6 @@ public class GetAllTableServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(GetAllTableServlet.class.getName());
     private final String sessionTableName = "table";
 
-    public GetAllTableServlet() {
-        logger.info("constructor");
-    }
-
-    @Override
-    public void init() throws ServletException {
-        logger.info("init");
-        super.init();
-    }
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("service");
-        super.service(req, resp);
-    }
-
-    @Override
-    public void destroy() {
-        logger.info("destroy");
-        super.destroy();
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");

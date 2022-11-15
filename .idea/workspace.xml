@@ -10,73 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="570ba0b2-3965-486e-9325-e0ce31ff069a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lab2_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/CorrectUriFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/GetAllTableServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/get_all_table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/AreaCheckServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/ControllerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/Ray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/ResultRay$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/ResultRay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/figures/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/figures/Figure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/figures/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/figures/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/classes/marat/web/lab2/figures/VoidFigure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/lib/gson-2.8.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/lab2_Web_exploded.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/scripts/canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/scripts/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/style/main_page_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab2_Web_exploded/style/main_page_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/AreaCheckServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/ResultRay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/ResultRay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/figures/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/main_page_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/main_page_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/Ray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/Ray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/ResultRay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/ResultRay$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/ResultRay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/ResultRay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/VoidFigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marat/web/lab2/figures/VoidFigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/Ray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/Ray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ResultRay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ResultRay$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ResultRay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/ResultRay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/VoidFigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/classes/marat/web/lab2/figures/VoidFigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/scripts/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/scripts/canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/scripts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/scripts/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/style/main_page_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab2-1.0-SNAPSHOT/style/main_page_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/CorrectUriFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/CorrectUriFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marat/web/lab2/GetAllTableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marat/web/lab2/GetAllTableServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +343,7 @@
       <workItem from="1667831744824" duration="632000" />
       <workItem from="1667839506783" duration="212000" />
       <workItem from="1667982702019" duration="12000" />
-      <workItem from="1668359981478" duration="31272000" />
+      <workItem from="1668359981478" duration="33652000" />
     </task>
     <servers />
   </component>
@@ -420,11 +357,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/marat/web/lab2/ResultRay.java</url>
           <line>28</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/marat/web/lab2/AreaCheckServlet.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

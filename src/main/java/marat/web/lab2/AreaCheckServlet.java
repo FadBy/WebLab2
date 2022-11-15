@@ -22,28 +22,6 @@ public class AreaCheckServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(AreaCheckServlet.class.getName());
     private final String sessionTableName = "table";
 
-    public AreaCheckServlet() {
-        logger.info("constructor");
-    }
-
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        logger.info("init");
-    }
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
-        logger.info("service");
-    }
-
-    @Override
-    public void destroy() {
-        super.destroy();
-        logger.info("destroy");
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         long now = System.currentTimeMillis();

@@ -12,15 +12,6 @@ public class CorrectUriFilter implements Filter {
     private final Logger logger = Logger.getLogger(CorrectUriFilter.class.getName());
     private final String AreaCheckServletUri = "/lab2_Web_exploded/AreaCheckServlet";
 
-    public CorrectUriFilter() {
-        logger.info("constructor");
-    }
-
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        logger.info("init");
-    }
-
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         var httpRequest = (HttpServletRequest) request;
@@ -31,10 +22,5 @@ public class CorrectUriFilter implements Filter {
             return;
         }
         chain.doFilter(request, response);
-    }
-
-    @Override
-    public void destroy() {
-        logger.info("destroy");
     }
 }
